@@ -22,8 +22,8 @@ World of Warcraft
          |   `-- GlobalStrings.lua
          |-- shitpost.lua
          `-- textures
-         |-- background-gradient.blp
-         `-- background-gradient.psd
+             |-- background-gradient.blp
+             `-- background-gradient.psd
 
 </pre>
 

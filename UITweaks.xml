@@ -1,0 +1,30 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	<Script File="Config.lua"/>
+	<Script File="UITweaks.lua"/>
+	<Frame name="UITweaksClockFrame" hidden="true">
+		<Scripts>
+			<OnUpdate>
+				UITweaks:Clock_OnUpdate(elapsed)
+			</OnUpdate>
+			<OnShow>
+				this.timer = 0
+			</OnShow>
+			<OnHide>
+				this.timer = 0
+			</OnHide>
+		</Scripts>
+	</Frame>
+	<Frame name="UITweaksFrame" frameStrata="BACKGROUND" hidden="true" alpha="1">
+		<Scripts>
+			<OnLoad>
+                UITweaks_OnLoad();
+			</OnLoad>
+			<OnEvent>
+				UITweaks_OnEvent(event, arg1, arg2);
+			</OnEvent>
+			<OnUpdate>
+				UITweaks_OnUpdate(arg1);
+			</OnUpdate>
+		</Scripts>
+	</Frame>
+</Ui>

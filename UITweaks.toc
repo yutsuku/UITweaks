@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: UITweaks
+## Notes: Tweaks the User Interface to be as minimalistic as possible
+## Author: moh
+## Version: 1.1
+
+UITweaks.xml
+shitpost.lua
